@@ -105,7 +105,7 @@ class ReflectionUtil
         if (!isset($clazz)) {
             return null;
         }
-        $wrapObject = new $clazz();
+        $wrapObject = __NAMESPACE__ . new $clazz();
 
         if (isset($array) && !empty($array)) {
             foreach ($array  as $key => $value) {
