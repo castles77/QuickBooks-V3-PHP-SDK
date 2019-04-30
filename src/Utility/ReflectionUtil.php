@@ -106,7 +106,7 @@ class ReflectionUtil
             return null;
         }
         
-        $clazz = __NAMESPACE__ . $clazz;
+        $clazz = 'QuickBooksOnline\API\WebhooksService\' . $clazz;
             
         $wrapObject = new $clazz();
 
